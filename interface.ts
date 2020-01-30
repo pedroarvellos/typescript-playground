@@ -18,15 +18,17 @@ class Person implements Base {
 }
 
 class Company implements Base {
-    cpnj: number;
+    // It means I can only access this attribute from inside this class.
+    // if I define the var like cnpj: number; then I can access from outside.
+    private cnpj: number;
 
-    constructor(cpnj: number) {
-        this.cpnj = cpnj;
+    constructor(cnpj: number) {
+        this.cnpj = cnpj;
 
     }
 
     describeMe(): void {
-        console.log(`Your cpnj is ${this.cpnj}`)
+        console.log(`Your cnpj is ${this.cnpj}`)
     }
 }
 
