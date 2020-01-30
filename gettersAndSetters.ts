@@ -1,25 +1,25 @@
 class Point {
-    constructor(private xValue?: number, private yValue?: number) {
+    constructor(private _x?: number, private _y?: number) {
     }
 
-    get XValue() {
-        return this.xValue;
+    get x() {
+        return this._x;
     }
 
-    get YValue() {
-        return this.yValue;
+    get y() {
+        return this._y;
     } 
 
-    set XValue(value) {
-        this.xValue = value;
+    set x(value) {
+        this._x = value;
     }
 
-    set YValue(value) {
-        this.yValue = value;
+    set y(value) {
+        this._y = value;
     } 
 }
 
 let point: Point = new Point(0, 0)
-console.log(point.XValue)
-point.XValue = 1;
-console.log(point.XValue)
+console.log(point.x)
+point.x = 1;
+console.log(point.x)
