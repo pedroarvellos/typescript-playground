@@ -10,6 +10,8 @@ class RealPerson extends BasePerson {
     constructor(name: string) {
         super();
         this.name = name;
+        // For example, if the sayMyName method were private
+        // I could only access its value inside the BasePerson class.
         this.sayMyName();
     };
 }
